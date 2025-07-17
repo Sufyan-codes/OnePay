@@ -19,7 +19,7 @@ const Navbar = () => {
 }
 
   return (
-    <nav className="fixed  left-0 right-0 z-50  ">
+    <nav className="fixed bg-white  left-0 right-0 z-50  ">
       <motion.div
        initial={{ opacity: 0, y: -30 }}
        animate={{ opacity: 1, y: 0 }}

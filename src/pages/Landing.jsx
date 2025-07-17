@@ -81,7 +81,7 @@ const Landing = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-6xl text-center tracking-tighter  mb-6 mt-6"
+          className="text-3xl md:text-6xl text-center font-medium tracking-tighter  mb-6 mt-6"
         >
           The Smart Choice For <br />
           Seamless Payments
@@ -95,7 +95,7 @@ const Landing = () => (
             transition={{ duration: 0.8 }}
             className=" mb-6 mt-6 flex flex-col items-left gap-4 "
           >
-            <h1 className="tracking-tighter lg:text-4xl text-3xl ">Always Reliable</h1>
+            <h1 className="tracking-tighter lg:text-4xl text-3xl font-medium">Always Reliable</h1>
             <p className=" text-gray-700">
               Zero downtime guaranteed. Your money moves wen you need it, every
               single time.
@@ -115,9 +115,9 @@ const Landing = () => (
           </motion.div>
         </div>
 
-        <div className="flex justify-between lg:flex-row flex-col items-center gap-8">
-          <motion.div
-            className="lg:block sm:hidden"
+        <div className="flex justify-between lg:flex-row flex-col-reverse items-center gap-8">
+         
+        <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, x: -30 }}
             transition={{ duration: 0.8 }}
@@ -131,7 +131,7 @@ const Landing = () => (
             transition={{ duration: 0.8 }}
             className=" mb-6 mt-6 flex flex-col gap-4 "
           >
-            <h1 className="tracking-tighter lg:text-4xl text-3xl">Fast And Simple</h1>
+            <h1 className="tracking-tighter lg:text-4xl text-3xl font-medium">Fast And Simple</h1>
             <p className=" text-gray-700">
               Financial transitions so smooth, you will forget theyr`e happening
             </p>
@@ -141,14 +141,7 @@ const Landing = () => (
               <li className="flex gap-2 items-center"><LuMousePointerClick /> <p>One-Click Transactions</p></li>
             </ul>
           </motion.div>
-          <motion.div
-            className="lg:hidden"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, x: -30 }}
-            transition={{ duration: 0.8 }}
-          >
-            <img src={About2} className="w-[300px] md:w-[550px]" alt="" />
-          </motion.div>
+         
         </div>
 
         <div className="flex justify-between lg:flex-row flex-col  items-center gap-8">
@@ -158,7 +151,7 @@ const Landing = () => (
             transition={{ duration: 0.8 }}
             className=" mb-6 mt-6 flex flex-col gap-4 "
           >
-            <h1 className="tracking-tighter  lg:text-4xl text-3xl">Unmatched customer Care</h1>
+            <h1 className="tracking-tighter  lg:text-4xl text-3xl font-medium">Unmatched customer Care</h1>
             <p className=" text-gray-700">
               We`re not just a platform, We`re your finacial partner. available
               24/7
@@ -184,7 +177,7 @@ const Landing = () => (
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl md:text-6xl text-center tracking-tighter  mb-6 mt-6"
+            className="text-3xl md:text-6xl text-center tracking-tighter font-medium mb-6 mt-6"
           >
             Getting Started
           </motion.h1>
@@ -207,7 +200,7 @@ const Landing = () => (
               <span className="bg-pink-300 w-12 h-12 rounded-full">
               <FaThumbsUp className="m-4 text-black" />
               </span>
-              <h1 className="font-bold text-gray-900 text-xl mt-2">
+              <h1 className="font-medium text-gray-900 text-xl mt-2">
                 Sign up and Verify Your <br /> Details
               </h1>
               <p className="text-sm text-gray-700">
@@ -218,7 +211,7 @@ const Landing = () => (
 
             <div className="flex flex-col gap-4 p-8  border rounded-lg">
               <span className="bg-pink-300 w-12 h-12 rounded-full "><IoShieldCheckmarkSharp className="m-4 text-black" /></span>
-              <h1 className="font-bold text-gray-900 text-xl">
+              <h1 className="font-medium text-gray-900 text-xl">
                 Complete Your Verification
               </h1>
               <p className="text-sm text-gray-700">
