@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import About from "../assets/about1-B_jg3c0Z.png";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const { login } = useAuth();
@@ -33,7 +34,10 @@ const Signup = () => {
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="w-full p-2 border rounded" required />
           <input type="number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="phone number" className="w-full p-2 border rounded" required />
         <button type="submit" className="w-full bg-[#510453] text-white p-2 rounded-lg">Create Account</button>
-      </form>
+        </form>
+        <p className="mt-4 text-sm text-center text-gray-600">
+          Already have an account? <Link to="/login" className="text-primary hover:underline">Log In</Link>
+        </p>
     </div>
 </motion.section>
   );

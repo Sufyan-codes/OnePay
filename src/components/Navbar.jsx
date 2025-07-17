@@ -73,13 +73,13 @@ const Navbar = () => {
                 to="/signup"
                 className="px-4 py-2 bg-primary text-black rounded-md hover:bg-primary/90 transition"
               >
-                Sign Up
+                Create Account
                 </Link>
                 <Link
-                to="/login"
+                to="*"
                 className="bg-yellow-600 text-black px-6 py-2 rounded-md font-medium shadow hover:scale-105 transition"
               >
-                Login
+                Download
               </Link>
             </>
           )}
@@ -94,7 +94,7 @@ const Navbar = () => {
       </motion.div>
       {isOpen &&
         (
-          <div className="md:hidden text-black backdrop-blur-md border-b
+          <div className="md:hidden text-black bg-white border-b
                 border-neutral-200 p-4 rounded-xl mt-2">
             <div className='flex flex-col text-center space-y-4'>
               <Link to="/" className="hover:text-neutral-700 py-2 px-4">
@@ -107,12 +107,17 @@ const Navbar = () => {
                 Contact
               </Link>
                    
-              <Link to="/login" className=" text-black
+              <Link to="/signup" className=" text-black
                     py-2 px-4 rounded-lg hover:bg-neutral-700 transition">
-                Login
+                Create Account
               </Link>
             
-                  
+              <Link
+                to="*"
+                className="bg-yellow-600 text-black px-6 py-2 rounded-md font-medium shadow hover:scale-105 transition"
+              >
+                Download
+              </Link>
             </div>
           </div>
         )

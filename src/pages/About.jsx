@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import CTA from "../components/CTA"
 import More from '../components/More';
+import { FaCheck } from "react-icons/fa6";
 
 export default function About() {
     return (
@@ -24,7 +25,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-7xl  tracking-tighter text-[#510453] mb-6 mt-6"
+          className="text-4xl md:text-7xl font-medium tracking-tighter text-[#510453] mb-6 mt-6"
         >
           Learn how We`re
               <br />
@@ -93,10 +94,10 @@ export default function About() {
           
 
             <ul className='flex flex-col gap-4 lg:gap-8 mt-12'>
-                    <li className='text-gray-700 text-lg'><span className=' text-black'>Reliability:</span> Delivering on our promise of zero downtime.</li>
-                    <li className='text-gray-700 text-lg'><span className=' text-black'>Care:</span> Putting our customer first with outstanding support.</li>
-                    <li className='text-gray-700 text-lg'><span className=' text-black'>Innovation:</span> Leveraging cutting-edge technology to simplify payments.</li>
-                    <li className='text-gray-700 text-lg'><span className=' text-black'>Trust:</span> Ensuring your transactons are safe and secure.</li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Reliability:</span> Delivering on our promise of zero downtime.</li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Care:</span> Putting our customer first with outstanding support.</li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Innovation:</span> Leveraging cutting-edge technology to simplify payments.</li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Trust:</span> Ensuring your transactons are safe and secure.</li>
          </ul>
         </div>
         

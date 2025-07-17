@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import CTA from "../components/CTA";
 import img from "../assets/contact1-BqtAsJJl.png";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -23,7 +25,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-2xl md:text-7xl  tracking-tighter  text-[#510453] mb-6 mt-6"
+              className="text-2xl md:text-7xl  tracking-tighter font-medium text-[#510453] mb-6 mt-6"
             >
               Here For You,
               <br />
@@ -36,9 +38,9 @@ export default function Contact() {
               back.
             </p>
             <ul className="flex flex-col gap-4 mt-6  text-[#510453]">
-              <li>Live Chat</li>
-              <li>Call: +234567890</li>
-              <li>Email: Ondepay@gmail.com</li>
+              <li className="flex items-center gap-2 hover:underline"><p>Live Chat</p> <MdOutlineArrowRightAlt /></li>
+              <li className="flex items-center gap-2 hover:underline"><p>Call: +234567890</p> <MdOutlineArrowRightAlt /></li>
+              <li className="flex items-center gap-2 hover:underline"><p>Email: Ondepay@gmail.com</p> <MdOutlineArrowRightAlt /></li>
             </ul>
           </motion.div>
           <img src={img} alt="" />
