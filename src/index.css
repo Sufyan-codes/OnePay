@@ -14,6 +14,10 @@ h1 {
   font-style: normal;
 
 }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .kanit-thin {
   font-family: "Kanit", sans-serif;
   font-weight: 100;

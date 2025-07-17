@@ -23,7 +23,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl  tracking-tighter font-semibold text-[#510453] mb-6 mt-6"
+              className="text-2xl md:text-7xl  tracking-tighter  text-[#510453] mb-6 mt-6"
             >
               Here For You,
               <br />

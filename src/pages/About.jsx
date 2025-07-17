@@ -24,7 +24,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-7xl  tracking-tighter font-semibold text-[#510453] mb-6 mt-6"
+          className="text-4xl md:text-7xl  tracking-tighter text-[#510453] mb-6 mt-6"
         >
           Learn how We`re
               <br />
@@ -49,10 +49,10 @@ export default function About() {
 
             <div className="flex flex-col gap-4 p-8  border rounded-lg">
               
-              <h1 className="tracking-tighter font-semibold text-gray-900 text-xl lg:text-2xl mt-4">
+              <h1 className="tracking-tighter text-gray-900 text-xl lg:text-2xl mt-4">
                 Our Mission
               </h1>
-              <p className=" text-gray-700">
+              <p className="md:text-xl text-sm text-gray-700">
                           To revolutionise the payment landscape in Africa by offering fast,
                           easy, and flawless payment solutions, complemented by
                           outstanding care and customer service.
@@ -61,10 +61,10 @@ export default function About() {
 
             <div className="flex flex-col gap-4 p-8  border rounded-lg">
               
-              <h1 className="tracking-tighter font-semibold text-gray-900 text-xl lg:text-2xl mt-4">
+              <h1 className="tracking-tighter text-gray-900 text-xl lg:text-2xl mt-4">
                 Our Vision
               </h1>
-                      <p className=" text-gray-700">
+                      <p className="md:text-xl text-sm text-gray-700">
                           To become the most trusted and beloved payment platform
                           across Africa, known for its reliability, user-friendly experience, and
                           customer-centric approach.
@@ -86,17 +86,17 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl text-center font-bold mb-6 mt-6"
+            className="text-4xl md:text-6xl text-center  mb-6 mt-6"
           >
             Our Values
           </motion.h1>
           
 
             <ul className='flex flex-col gap-4 lg:gap-8 mt-12'>
-                    <li className='text-gray-700 text-lg'><span className='font-bold text-black'>Reliability:</span> Delivering on our promise of zero downtime.</li>
-                    <li className='text-gray-700 text-lg'><span className='font-bold text-black'>Care:</span> Putting our customer first with outstanding support.</li>
-                    <li className='text-gray-700 text-lg'><span className='font-bold text-black'>Innovation:</span> Leveraging cutting-edge technology to simplify payments.</li>
-                    <li className='text-gray-700 text-lg'><span className='font-bold text-black'>Trust:</span> Ensuring your transactons are safe and secure.</li>
+                    <li className='text-gray-700 text-lg'><span className=' text-black'>Reliability:</span> Delivering on our promise of zero downtime.</li>
+                    <li className='text-gray-700 text-lg'><span className=' text-black'>Care:</span> Putting our customer first with outstanding support.</li>
+                    <li className='text-gray-700 text-lg'><span className=' text-black'>Innovation:</span> Leveraging cutting-edge technology to simplify payments.</li>
+                    <li className='text-gray-700 text-lg'><span className=' text-black'>Trust:</span> Ensuring your transactons are safe and secure.</li>
          </ul>
         </div>
         

@@ -25,11 +25,11 @@ const Navbar = () => {
        animate={{ opacity: 1, y: 0 }}
        transition={{ duration: 0.8 }}
         className="max-w-7xl mx-auto  py-7 pb-5 px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        <Link to="/" className="text-xl font-semibold text-primary ">
+        <Link to="/" className="text-xl text-primary ">
           <img src={logo} className="w-32" alt="" />
         </Link>
 
-        <div className="hidden md:flex space-x-6 text-neutral-700 tracking-tighter font-semibold">
+        <div className="hidden md:flex space-x-6 text-neutral-700 tracking-tighter ">
           <Link to="/" className=" hover:text-neutral-700 py-2 px-4">
             Home
           </Link>

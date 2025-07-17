@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <section className="bg-[#510453] py-10 pb-28">
-      <div className="max-w-7xl mx-auto text-white grid grid-co-2 px-4 lg:grid-cols-5 md:grid-cols-2 pt-5 gap-2">
+      <div className="max-w-7xl mx-auto text-white grid grid-co-2 px-4 lg:grid-cols-5 md:grid-cols-2 pt-5 px-4 gap-8">
         <div className="flex flex-col gap-4">
           <img src={img} className="w-32" alt="" />
           <p className="text-sm">
@@ -90,18 +90,9 @@ export default function Footer() {
 
        
           </div>
-          <div className="flex justify-between max-w-7xl mx-auto mt-10 pt-5 text-white border-t">
+          <div className="max-w-7xl mx-auto mt-10 pt-5 px-4 text-white border-t text-center">
           <p className="text-sm">&#169; 2025 Ondepay. All rights reserved</p>
-          <div>
-            <ul className="text-sm flex gap-4">
-              <li>
-                <Link to="/contact">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/howToUse">Terms and Conditions</Link>
-              </li>
-            </ul>
-          </div>
+          
         </div>
     </section>
   );

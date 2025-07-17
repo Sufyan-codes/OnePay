@@ -14,17 +14,17 @@ import More from "../components/More";
 const Landing = () => (
   <section className="max-w-7xl mx-auto relative py-28 tracking-lighter overflow-hidden">
     <div className=" px-4 flex flex-col items-center ">
-      <div className="flex flex-col gap-2 mt-10 text-center">
+      <div className="flex flex-col gap-2 mt-1 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center gap-3 border border-gray-900 py-1  rounded-full  mx-auto "
+          className="flex items-center w-[300px] gap-3 border border-gray-900  rounded-full  mx-auto "
         >
-          <span className=" flex items-center text-center bg-gray-900 rounded-full py-4 px-4">
+          <span className=" flex items-center text-center bg-gray-900 rounded-full h-10 w-10 px-2">
             ⚡
           </span>
-          <p className="pr-2  text-sm ">
+          <p className=" text-[10px] ">
             {" "}
             Instant Transfer Zero Barriers, Complete Control
           </p>
@@ -33,7 +33,7 @@ const Landing = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-7xl  tracking-tighter font-semibold text-[#510453] mb-6 mt-6"
+          className="text-2xl md:text-7xl  tracking-tighter  text-[#510453] mb-6 mt-6"
         >
           Flawless Payments,
           <br />
@@ -43,7 +43,7 @@ const Landing = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-lg text-gray-700 mb-6 max-w-[500px] mx-auto"
+          className="text-sm md:text-lg text-gray-900 mb-6 max-w-[500px] mx-auto"
         >
           Powering entreprenuers all over Africa with lighting-fast payments and
           zero complications.
@@ -63,27 +63,30 @@ const Landing = () => (
         </motion.div>
       </div>
       <div>
-        <img src={intro} alt="" />
+        <img src={intro} className="w-[300px] md:w-[500px]" alt="" />
       </div>
-      <div>
+      
+    </div>
+    <div className=" mt-28">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl text-center tracking-tighter font-semibold mb-6 mt-6"
+          className="text-3xl md:text-6xl text-center tracking-tighter  mb-6 mt-6"
         >
           The Smart Choice For <br />
           Seamless Payments
         </motion.h1>
 
-        <div className="flex justify-between lg:flex-row flex-col items-center gap-8">
+      <div className="flex flex-col md:flex-col-2 px-4">
+      <div className="flex justify-between lg:flex-row flex-col  items-center gap-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, x: 30 }}
             transition={{ duration: 0.8 }}
-            className=" mb-6 mt-6 flex flex-col gap-4 "
+            className=" mb-6 mt-6 flex flex-col items-left gap-4 "
           >
-            <h1 className="tracking-tighter font-semibold lg:text-4xl text-3xl ">Always Reliable</h1>
+            <h1 className="tracking-tighter lg:text-4xl text-3xl ">Always Reliable</h1>
             <p className=" text-gray-700">
               Zero downtime guaranteed. Your money moves wen you need it, every
               single time.
@@ -99,17 +102,18 @@ const Landing = () => (
             animate={{ opacity: 1, x: -30 }}
             transition={{ duration: 0.8 }}
           >
-            <img src={About} width={500} alt="" />
+            <img src={About} className="w-[300px] md:w-[550px]" alt="" />
           </motion.div>
         </div>
 
-        <div className="flex justify-between lg:flex-row flex-col p-4 items-center gap-8">
+        <div className="flex justify-between lg:flex-row flex-col items-center gap-8">
           <motion.div
+            className="lg:block sm:hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, x: -30 }}
             transition={{ duration: 0.8 }}
           >
-            <img src={About2} width={500} alt="" />
+            <img src={About2} className="w-[300px] md:w-[550px]" alt="" />
           </motion.div>
 
           <motion.div
@@ -118,7 +122,7 @@ const Landing = () => (
             transition={{ duration: 0.8 }}
             className=" mb-6 mt-6 flex flex-col gap-4 "
           >
-            <h1 className="tracking-tighter font-semiboldlg:text-4xl text-3xl">Fast And Simple</h1>
+            <h1 className="tracking-tighter lg:text-4xl text-3xl">Fast And Simple</h1>
             <p className=" text-gray-700">
               Financial transitions so smooth, you will forget theyr`e happening
             </p>
@@ -128,16 +132,24 @@ const Landing = () => (
               <li>One-Click Transactions</li>
             </ul>
           </motion.div>
+          <motion.div
+            className="lg:hidden"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, x: -30 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img src={About2} className="w-[300px] md:w-[550px]" alt="" />
+          </motion.div>
         </div>
 
-        <div className="flex justify-between lg:flex-row flex-col p-4 items-center gap-8">
+        <div className="flex justify-between lg:flex-row flex-col  items-center gap-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, x: 30 }}
             transition={{ duration: 0.8 }}
             className=" mb-6 mt-6 flex flex-col gap-4 "
           >
-            <h1 className="tracking-tighter font-semibold lg:text-4xl text-3xl">Unmatched customer Care</h1>
+            <h1 className="tracking-tighter  lg:text-4xl text-3xl">Unmatched customer Care</h1>
             <p className=" text-gray-700">
               We`re not just a platform, We`re your finacial partner. available
               24/7
@@ -153,16 +165,17 @@ const Landing = () => (
             animate={{ opacity: 1, x: -30 }}
             transition={{ duration: 0.8 }}
           >
-            <img src={About3} width={500} alt="" />
+            <img src={About3} className="w-[300px] md:w-[500px]" alt="" />
           </motion.div>
         </div>
+       </div>
 
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl text-center tracking-tighter font-semibold mb-6 mt-6"
+            className="text-3xl md:text-6xl text-center tracking-tighter  mb-6 mt-6"
           >
             Getting Started
           </motion.h1>
@@ -170,7 +183,7 @@ const Landing = () => (
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-lg text-gray-700 mb-12 text-center"
+            className="text-sm lg:text-xl text-gray-700 mb-12 text-center"
           >
             begin your journey with Ondepay in just a few simple steps!
           </motion.p>
@@ -179,7 +192,7 @@ const Landing = () => (
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="grid grid-col-1 lg:grid-cols-3 text-lg text-gray-700 gap-4 mb-6"
+            className="grid grid-col-1 lg:grid-cols-3 px-4 text-lg text-gray-700 gap-4 mb-6"
           >
             <div className="flex flex-col gap-4 p-8 border rounded-lg">
               <span className="bg-pink-300 w-12 h-12 rounded-full">
@@ -194,7 +207,7 @@ const Landing = () => (
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 p-8 border rounded-lg">
+            <div className="flex flex-col gap-4 p-8  border rounded-lg">
               <span className="bg-pink-300 w-12 h-12 rounded-full">shield</span>
               <h1 className="font-bold text-gray-900 text-xl">
                 Complete Your Verification
@@ -233,7 +246,6 @@ const Landing = () => (
         
         <CTA />
       </div>
-    </div>
   </section>
 );
 
