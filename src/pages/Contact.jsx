@@ -4,6 +4,7 @@ import CTA from "../components/CTA";
 import img from "../assets/contact1-BqtAsJJl.png";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { FaHeadphonesAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -16,22 +17,25 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-left mt-10 text-left"
           >
-            <p className="text-center px-4 py-2 w-28 text-sm  py-1 bg-white  rounded-full">
+            <div className="flex items-center gap-2 px-4 py-2 w-32 py-1 bg-white  rounded-full">
+            <FaHeadphonesAlt />
+            <p className="text-center  text-sm  ">
               {" "}
               Contact Us
             </p>
+           </div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-2xl md:text-7xl  tracking-tighter font-medium text-[#510453] mb-6 mt-6"
+              className="text-2xl md:text-6xl  tracking-tighter font-medium text-[#510453] mb-6 mt-6"
             >
               Here For You,
               <br />
               Anytime, Anywhere.
             </motion.h1>
-            <p className="text-sm md:text-xl text-gray-700">
+            <p className="text-sm md:text-[16px] text-gray-700">
               We prioritize your satisfaction. Our support team is available 24/7
               to assist you with any questions or concers. Whether you need help
               to navigate the app or resolving a payment issue. we`ve got your

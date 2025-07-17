@@ -6,7 +6,7 @@ export default function CTA() {
     <section className='bg-[#FFF9EC] pt-1 rounded-lg'>
           <div className='max-w-6xl mx-auto grid grid-col lg:grid-cols-2 items-center px-8 gap-2 mt-28'>
               <div>
-                  <h1 className='text-2xl lg:text-6xl tracking-tighter'>
+                  <h1 className='text-2xl font-medium lg:text-6xl tracking-tighter'>
                       Start Your
                       Flawless <br />
                       Payment Journey <br />

@@ -50,10 +50,10 @@ export default function About() {
 
             <div className="flex flex-col gap-4 p-8  border rounded-lg">
               
-              <h1 className="tracking-tighter text-gray-900 text-xl lg:text-2xl mt-4">
+              <h1 className="tracking-tighter text-gray-900 font-medium text-xl lg:text-2xl mt-4">
                 Our Mission
               </h1>
-              <p className="md:text-xl text-sm text-gray-700">
+              <p className="md:text-[16px] text-sm text-gray-700">
                           To revolutionise the payment landscape in Africa by offering fast,
                           easy, and flawless payment solutions, complemented by
                           outstanding care and customer service.
@@ -62,10 +62,10 @@ export default function About() {
 
             <div className="flex flex-col gap-4 p-8  border rounded-lg">
               
-              <h1 className="tracking-tighter text-gray-900 text-xl lg:text-2xl mt-4">
+              <h1 className="tracking-tighter font-medium text-gray-900 text-xl lg:text-2xl mt-4">
                 Our Vision
               </h1>
-                      <p className="md:text-xl text-sm text-gray-700">
+                      <p className="md:text-[16px] text-sm text-gray-700">
                           To become the most trusted and beloved payment platform
                           across Africa, known for its reliability, user-friendly experience, and
                           customer-centric approach.
@@ -87,7 +87,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl text-center  mb-6 mt-6"
+            className="text-4xl md:text-6xl font-medium text-center  mb-6 mt-6"
           >
             Our Values
           </motion.h1>
