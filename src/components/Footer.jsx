@@ -71,7 +71,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4 bg-[#59085c] flex flex-col justify-center items-center rounded-lg shadow">
+        <div className="flex flex-col gap-4 bg-[#59085c] py-4 flex flex-col justify-center items-center rounded-lg shadow">
           <h1 className="font-bold">Download our App</h1>
           <motion.div
             initial={{ opacity: 0, y: 30 }}

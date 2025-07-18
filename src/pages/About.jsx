@@ -93,11 +93,11 @@ export default function About() {
           </motion.h1>
           
 
-            <ul className='flex flex-col gap-4 lg:gap-8 mt-12'>
-                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Reliability:</span> Delivering on our promise of zero downtime.</li>
-                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Care:</span> Putting our customer first with outstanding support.</li>
-                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Innovation:</span> Leveraging cutting-edge technology to simplify payments.</li>
-                    <li className='text-gray-700 text-lg flex gap-2 items-center'><FaCheck /> <span className=' text-black'>Trust:</span> Ensuring your transactons are safe and secure.</li>
+            <ul className='flex flex-col gap-4 lg:gap-8 mt-12 '>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center text-sm lg:text-xl'><FaCheck /> <span className=' text-black'>Reliability:</span><p> Delivering on our promise of zero downtime.</p></li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center text-sm lg:text-xl'><FaCheck /> <span className=' text-black'>Care:</span><p> Putting our customer first with outstanding support.</p></li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center text-sm lg:text-xl'><FaCheck /> <span className=' text-black'>Innovation:</span><p> Leveraging cutting-edge technology to simplify payments.</p></li>
+                    <li className='text-gray-700 text-lg flex gap-2 items-center text-sm lg:text-xl'><FaCheck /> <span className=' text-black'>Trust:</span><p> Ensuring your transactons are safe and secure.</p></li>
          </ul>
         </div>
         
